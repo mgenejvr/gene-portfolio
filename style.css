@@ -7,46 +7,32 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #fffef075;
   height: 10vh;
 }
 
-/* Float the name to the left */
-/* Style for the navbar-name with gradient text */
 li.navbar-name {
-  float: left;
   font-weight: bold;
   font-size: 30px;
-  padding: 14px 16px;
   background: linear-gradient(90deg, #C7253E, #e74820, #e2aa0e); /* Green gradient */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-transform: uppercase; /* Make the text uppercase */
+  text-transform: uppercase;
 }
 
-
-li {
-  float: right;
-}
-
-li a {
-  display: block;
+.nav-item .nav-link {
+  font-weight: bold;
   color: black;
   text-align: right;
   padding: 14px 16px;
-  font-weight: bold;
-  text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: #d5bdaf;
+.navbar-toggler {
+  border-color: #C7253E;
 }
 
-.active {
-  background-color: #C7253E;
-  border-radius: 20px;
-  color: white;
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(199,37,62, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 
