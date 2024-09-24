@@ -1,210 +1,216 @@
 body {
-  background-color: #fffef075;
-  scroll-behavior: smooth; /* Enables smooth scrolling */
+    background-color: #31363F;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+  }
+
+.nav-item .nav-link{
+    color: #E6FEFC;
+    text-align: right;
+    font-size: 20px;
+    word-spacing: 20%;
+  }
+
+#navbar-name{
+    color: #E6FEFC;
+    font-size: 25px;
+    margin-left: 5px;
+    margin-top: 15px;
+  }
+
+.navbar-toggler-icon{
+    background-color: #00F2DE;
+  }
+
+.h1-name{
+    color: #E6FEFC;
+    padding-left: 5%;
+  }
+
+.span-name{
+    color: #00F2DE;
+  }
+
+.h4-home{
+    color: #E6FEFC;
+    word-spacing: 10px;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-top: 50px;
+  }
+
+#card-about-me{
+    border-width: 5px;
+    border-color: #00F2DE;
+    background-color: #e6fefc3d;
+  }
+
+.card-title, #about-me-text{
+    color: #E6FEFC;
+  }
+
+#about-me-text{
+    text-align: left;
+    margin-left: 5%;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #fffef075;
-  height: 10vh;
+#img-about-me {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 20px auto 0 auto; /* 20px margin-top, auto for horizontal centering */
 }
 
-li.navbar-name {
-  font-weight: bold;
-  font-size: 30px;
-  background: linear-gradient(90deg, #C7253E, #e74820, #e2aa0e); /* Green gradient */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
+#download-cv-btn{
+    background-color: #00F2DE;
 }
 
-.nav-item .nav-link {
-  font-weight: bold;
-  color: black;
-  text-align: right;
-  padding: 14px 16px;
-}
-
-.navbar-toggler {
-  border-color: #C7253E;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(199,37,62, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-
-/* Section Styling */
 .section {
-  min-height: 100vh; /* Full viewport height for each section */
-  padding: 50px;
-  background-color: #fff;
-}
-
-#home, #skills {
-  background-color: #fffef075;
-}
-
-#projects{
-  background-color:black;
-}
-
-.home-desc {
-  margin-top: 5%;
-  color: #C7253E;
-  text-align: center;
-  margin-bottom: 5%;
-}
-
-/* Apply letter spacing and line height to all h5 elements */
-h4 {
-  letter-spacing: 2px; /* Adjust the spacing between characters */
-  line-height: 1.8;    /* Adjust the spacing between lines */
-}
-
-/* Ensure social icons are in a row and centered */
-.social-links {
-  display: flex;
-  justify-content: start; /* Adjust this value to `center` or `end` if needed */
-  gap: 20px; /* Adjust the gap between icons */
-}
-
-.social-icon img {
-  width: 32px; /* Adjust the size of the icons */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Optional: Add hover effect */
-.social-icon img:hover {
-  opacity: 0.8; /* Slight fade on hover */
-}
-
-
-.home-desc, .skills{
-  font-family: cursive; 
-  font-weight: bold;
-}
-
-#projects p, #projects h1{
-  color: white;
-}
-
-.img-fluid{
-  width: 50%;
-  height: auto;
-  display: block;
-  /* border: solid #C7253E;
-  border-radius: 50px; */
-}
-
-p {
-  padding: 20px;
-  font-size: 15px;
-  color: #463f3a;
-}
-
-/* Typing Effect */
-.typing {
-  border-right: .15em solid #C7253E; /* Blinking cursor */
-  white-space: nowrap; /* Prevents text from wrapping */
-  overflow: hidden; /* Hides the rest of the string */
-}
-
-/* Blinking cursor animation */
-@keyframes blinkCursor {
-  0% {
-    border-right-color: rgba(199, 37, 62, 1);
+    min-height: 100vh; /* Full viewport height for each section */
+    padding: 50px;
+    /* background-color: #fff; */
   }
-  50% {
-    border-right-color: transparent;
+
+.skills{
+    color: #00F2DE;
   }
-  100% {
-    border-right-color: rgba(199, 37, 62, 1);
-  }
+
+  #skills {
+    position: relative;
+    color: white; /* Ensure text is still visible */
+    padding: 60px 0;
 }
 
-.typing {
-  animation: blinkCursor 0.7s step-end infinite;
+#skills::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/coding-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1; /* Adjust the opacity level (0.5 is 50%) */
+    z-index: -1; /* Ensures the background image stays behind the content */
 }
 
-
-/* Ensure rows are invisible initially */
-#skills .row {
-  opacity: 0;  /* Initially invisible */
-  transform: translateX(-100%); /* Move them off-screen initially */
-}
-
-/* Card hover effect for zooming */
-#skills .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for zoom and shadow */
-}
-
-/* Light zoom and shadow effect on hover */
-#skills .card:hover {
-  transform: scale(1.20); /* Slight zoom effect */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Add a shadow for more emphasis */
-}
-
-/* Add animation to rows only when this class is applied */
-.animate-row {
-  animation: slideInFromLeft 0.8s ease-out forwards;  /* Animation duration 0.8s */
-  opacity: 1; /* Make visible */
-}
-
-/* Delay the entrance of each row inside the #skills section */
-#skills .row:nth-child(1) {
-  animation-delay: 0.2s;      /* Delay for the first row */
-}
-
-#skills .row:nth-child(2) {
-  animation-delay: 0.8s;      /* Delay for the second row */
-}
-
-#skills .row:nth-child(3) {
-  animation-delay: 1.4s;      /* Delay for the third row */
-}
-
-/* Animation for horizontal entrance */
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-
-.card {
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.219), 0 10px 25px 0 rgba(0, 0, 0, 0.219);
-  text-align: center;        /* Center the card content */
-}
-
-.card p {
-  color: #C7253E;
+.card{
+    border-width: 3px;
+    border-color: #00F2DE;
+    border-style: solid;
 }
 
 .card-img-top {
-  width: 50%;              /* Ensures the image fills the width of the card */
-  height: 100px;            /* Set a fixed height for all images */
-  object-fit: contain;      /* Scale the image to fit within the box without cropping */
-  display: block;
-  margin: 0 auto;           /* Center the image horizontally */
-  padding: 10px;            /* Optional: Add padding around the image */
+    width: 50%;              /* Ensures the image fills the width of the card */
+    height: 80px;            /* Set a fixed height for all images */
+    object-fit: contain;      /* Scale the image to fit within the box without cropping */
+    display: block;
+    margin: 0 auto;           /* Center the image horizontally */
+    padding: 10px;            /* Optional: Add padding around the image */
+  }
+
+ #skills-text{
+    font-size: 20px;
+    color: #31363F;
+    text-align: center;
+    font-weight: 500;
+ }
+
+
+  /* Card hover effect for zooming */
+  #skills .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for zoom and shadow */
+  }
+  
+  /* Light zoom and shadow effect on hover */
+  #skills .card:hover {
+    transform: scale(1.10); /* Slight zoom effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Add a shadow for more emphasis */
+  }
+
+
+#skills-title, #project-title{
+    text-align: center;
+    color: #00F2DE;
+ }
+
+ h3, #projects-desc{
+    color: #E6FEFC;
+ }
+
+ .carousel-item img {
+    border-width: 3px;
+    border-color: #00F2DE;
+    border-style: solid; /* You need to specify the border style (solid, in this case) */
+    box-sizing: border-box; /* Ensures the border is included within the image size */
+
+}
+#contact {
+    min-height: 80vh; /* Full viewport height for each section */
+    position: relative;
+    color: white; /* Ensure text is still visible */
+    padding: 60px 0;
 }
 
-.card-text {
-  font-size: 20px;
-  font-weight: bold;
+#contact::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.25; /* Adjust the opacity level (0.5 is 50%) */
+    z-index: -1; /* Ensures the background image stays behind the content */
 }
- h3{
-  color: #fff;
- }
-footer{
-  background-color: #fffef075;
+
+.contact-title{
+    color: #00F2DE;
+    text-align: center;
+    margin-bottom: 5%;
 }
+
+/* Make the map container responsive */
+.map-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: #f5f5f5;
+}
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Card responsiveness */
+#card-contact {
+  margin-top: 20px;
+}
+
+/* Ensure the social media icons are centered */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+}
+  
+
+
+
+  
