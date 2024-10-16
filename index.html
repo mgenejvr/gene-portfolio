@@ -13,27 +13,28 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md ">
         <img src="images/web.png" class="img-fluid"><p id="navbar-name">Portfolio</p>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about-me">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-  </div>
+</div>
+
 
   <!-- Sections -->
 <section id="about-me" class="section">
@@ -43,7 +44,7 @@
           <div class="card" style="width: 100%;" id="card-about-me">
               <img src="images/pic2.jpg" alt="" id="img-about-me" class="img-fluid">
               <div class="card-body">
-                  <h5 class="card-title">Web Developer</h5>
+                  <h5 class="card-title" style="color: #E6FEFC">Web Developer</h5>
                   <p class="card-text" id="about-me-text">
                       <i class='fas fa-map-marker-alt'></i> #565 San Hilario Street, Puelay, Villasis, Pangasinan
                   </p>
@@ -194,261 +195,57 @@
   </section>        
 
   <section id="projects" class="section">
-    <h1 id="project-title">= Projects =</h1>
-
-    <!-- Section for Upcycling Waste -->
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Upcycling Waste</h3>
-          <p id="projects-desc">
-            It is a web-based application that has two user types: admin and client. The scope of the project focuses on developing a web-based application that would help the users of the system to disseminate essential information about upcycling recycled materials and food leftovers and gain knowledge about the ideas that are being disseminated. Its features will showcase the categorization for foods and crafts, recycling guidelines, comment section, chat, sharing to social media, and craft ideas and food ideas with instructions, needed ingredients or materials, images, and videos.
-            <br>
-            It is developed using PHP, HTML, CSS, Bootstrap, JavaScript, MySQL, and PHPMailer.
-            <br><br>
-            This is the link for actual demo : <a target="_blank" href="https://veed.io/view/57e40611-7438-4fb1-b990-0136ac32a265">Upcycling Waste</a>
-          </p>
+    <div class="container">
+      <h1 id="project-title">= Projects =</h1>
+      <div class="row mt-5">
+        <!-- Skill Cards Row 1 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="card-projects">
+          <div class="card h-100">
+            <img src="images/folder-management.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-center">Web Applications</h5>
+              <p class="card-text">This folder contains a collection of web applications, designed to showcase various functionalities and technologies used in modern web development. Each application is self-contained, demonstrating different aspects such as front-end interfaces, back-end logic, or full-stack solutions.</p>
+              <a href="web-apps.html" class="btn btn-dark mt-auto">See More <i class='fas fa-external-link-alt'></i></a>
+            </div>
+          </div>
         </div>
-  
-        <div class="col-md-6">
-          <div id="carouselUpcyclingWaste" class="carousel carousel-dark slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselUpcyclingWaste" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselUpcyclingWaste" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselUpcyclingWaste" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselUpcyclingWaste" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselUpcyclingWaste" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="card-projects">
+          <div class="card h-100">
+            <img src="images/folder-management.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-center">WordPress Plugins</h5>
+              <p class="card-text">This folder contains custom-developed WordPress plugins, each designed to extend the functionality of WordPress websites. These plugins offer tailored solutions for various site features, enhancing performance, customization, and user experience.</p>
+              <a href="plugins.html" class="btn btn-dark mt-auto">See More <i class='fas fa-external-link-alt'></i></a>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="images/upcycling-waste-1.png" class="d-block w-100" alt="Slide 1">
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="images/upcycling-waste-2.png" class="d-block w-100" alt="Slide 2">
-              </div>
-              <div class="carousel-item">
-                <img src="images/upcycling-waste-3.png" class="d-block w-100" alt="Slide 3">
-              </div>
-              <div class="carousel-item">
-                <img src="images/upcycling-waste-4.png" class="d-block w-100" alt="Slide 4">
-              </div>
-              <div class="carousel-item">
-                <img src="images/upcycling-waste-5.png" class="d-block w-100" alt="Slide 5">
-              </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="card-projects">
+          <div class="card h-100">
+            <img src="images/folder-management.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-center">Graphic Designs</h5>
+              <p class="card-text">This folder contains a collection of graphic designs, featuring creative artwork, branding materials, and visual content. Each design showcases unique styles and concepts, suitable for various digital and print media projects.</p>
+              <a href="graphic-designs.html" class="btn btn-dark mt-auto">See More <i class='fas fa-external-link-alt'></i></a>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselUpcyclingWaste" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselUpcyclingWaste" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" id="card-projects">
+          <div class="card h-100">
+            <img src="images/folder-management.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-center">Video Editing</h5>
+              <p class="card-text">This folder contains a collection of edited videos created for advertisements. Each video is crafted to engage audiences with compelling visuals and messaging, tailored to promote products, services, or brands across various platforms.</p>
+              <a href="video-editing.html" class="btn btn-dark mt-auto">See More <i class='fas fa-external-link-alt'></i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  
-    <!-- Section for Sitemap -->
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-6">
-          <div id="carouselSitemap" class="carousel carousel-dark slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselSitemap" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselSitemap" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselSitemap" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-  
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="images/sitemap-1.png" class="d-block w-100" alt="Slide 1">
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="images/sitemap-2.png" class="d-block w-100" alt="Slide 2">
-              </div>
-              <div class="carousel-item">
-                <img src="images/sitemap-3.png" class="d-block w-100" alt="Slide 3">
-              </div>
-              <div class="carousel-item">
-                <img src="images/mais-4.png" class="d-block w-100" alt="Slide 4">
-              </div>
-            </div>
-  
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSitemap" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselSitemap" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-  
-        <div class="col-md-6">
-          <h3>Sitemap Feature</h3>
-          <p id="projects-desc">
-            It is one of the features for the Asgaros forum I've developed. It is designed to generate separate XML files for the forum and categories for Asgaros forum. Each XML file are limited to 1000 topics, to stay within the constraints of sitemap protocol limits. So if the sitemap has more than 1000 topics per XML file, I've implemented a logic where it will split into multiple sitemaps.
-            <br>
-            It is developed using PHP, HTML, CSS, JavaScript, MySQL, and WordPress.<br><br>
-            This is the link for actual demo : <a target="_blank" href="https://veed.io/view/a64f738a-8881-4284-8373-af8b0b8366ac">Sitemap</a>
-          </p>
-        </div>
-      </div>
-    </div>
-
-  <!-- Section for Frachtpilot Dashboard Web App -->
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Frachtpilot Dashboard Web App</h3>
-          <p id="projects-desc">
-            Tüte is a bag in German. It is a web app that serves as a bag setting to create new bags and edit existing bags in that format where they easily can search and insert products from the overview.
-            <br>
-            It is developed using Google Apps Script, HTML, CSS, Bootstrap, JavaScript, and Excel  (which served as a database).<br><br>
-            This is the link for actual demo : <a target="_blank" href="https://veed.io/view/3989b77d-e8c3-4cd4-8111-aa3693ac3474">Frachtpilot Dashboard</a>
-          </p>
-        </div>
-  
-        <div class="col-md-6">
-          <div id="carouselFrachtpilot" class="carousel carousel-dark slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselFrachtpilot" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselFrachtpilot" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselFrachtpilot" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselFrachtpilot" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselFrachtpilot" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="images/web-app-1.png" class="d-block w-100" alt="Slide 1">
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="images/web-app-2.png" class="d-block w-100" alt="Slide 2">
-              </div>
-              <div class="carousel-item">
-                <img src="images/web-app-3.png" class="d-block w-100" alt="Slide 3">
-              </div>
-              <div class="carousel-item">
-                <img src="images/web-app-4.png" class="d-block w-100" alt="Slide 4">
-              </div>
-              <div class="carousel-item">
-                <img src="images/web-app-5.png" class="d-block w-100" alt="Slide 5">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFrachtpilot" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselFrachtpilot" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Section for Domra Contact Form -->
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-6">
-            <div id="carouselDCF" class="carousel carousel-dark slide">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselDCF" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselDCF" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              </div>
-
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                  <img src="images/dcf-1.png" class="d-block w-100" alt="Slide 1">
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="images/dcf-2.png" class="d-block w-100" alt="Slide 2">
-                </div>
-              </div>
-
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselDCF" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselDCF" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <h3>Domra Contact Form</h3>
-            <p id="projects-desc">
-              It is a WordPress plugin, it is a form transmission submitted through AJAX Call to the backend of WordPress. All input is sanitized and all the data should be sent to ClickUp through API so it is easier to keep track of new inquiries, I've also added reCaptcha since it is another way to provide spam protection by distinguishing between human users and automated bots because it allows the user to select images or solving puzzles.
-              <br>
-              It is developed using PHP, HTML, CSS, JavaScript, AJAX, ClickUp API, reCaptcha API and WordPress.<br><br>
-              This is the link for actual demo : <a target="_blank" href="https://veed.io/view/ebd1eb26-47c1-47b7-87fb-32cada758622">Domra Contact form</a>
-              
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Section for New Admin design for Toolbox for Asgaros Forum -->
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-6">
-            <h3>New Admin Design for Toolbox for Asgaros Forum</h3>
-            <p id="projects-desc">
-              Toolbox for Asgaros forum is a WordPress plugin which is an extension for Asgaros forum. I implemented a new admin design to have a more pleasing appearance for the users while maintaining its functionality.
-              <br>
-              It is developed using PHP, HTML, CSS, JavaScript, MySQL and WordPress.<br><br>
-              This is the link for actual demo : <a target="_blank" href="https://veed.io/view/d4c3317d-ac8d-48db-8994-35483899f96d">New Admin Design for Toolbox for Asgaros Forum</a>
-            </p>
-          </div>
-
-          <div class="col-md-6">
-            <div id="carouselTFAF" class="carousel carousel-dark slide">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselTFAF" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselTFAF" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselTFAF" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselTFAF" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselTFAF" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselTFAF" data-bs-slide-to="5" aria-label="Slide 6"></button>
-              </div>
+  </section>
     
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                  <img src="images/new-admin-1.png" class="d-block w-100" alt="Slide 1">
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="images/new-admin-2.png" class="d-block w-100" alt="Slide 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/new-admin-3.png" class="d-block w-100" alt="Slide 3">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/new-admin-4.png" class="d-block w-100" alt="Slide 4">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/new-admin-5.png" class="d-block w-100" alt="Slide 5">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/new-admin-6.png" class="d-block w-100" alt="Slide 6">
-                </div>
-              </div>
-    
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselTFAF" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselTFAF" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-        </div>
-      </div>
-  </section>    
 
   <section id="contact" class="section">
     <div class="container">

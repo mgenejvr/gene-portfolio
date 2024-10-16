@@ -44,7 +44,7 @@ body {
     background-color: #e6fefc3d;
   }
 
-.card-title, #about-me-text{
+ #about-me-text{
     color: #E6FEFC;
   }
 
@@ -147,6 +147,15 @@ body {
     box-sizing: border-box; /* Ensures the border is included within the image size */
 
 }
+
+#certificates {
+  min-height: 80vh; /* Full viewport height for each section */
+  position: relative;
+  color: white; /* Ensure text is still visible */
+  padding: 60px 0;
+}
+
+
 #contact {
     min-height: 80vh; /* Full viewport height for each section */
     position: relative;
